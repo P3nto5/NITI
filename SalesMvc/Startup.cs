@@ -13,6 +13,8 @@ using Microsoft.EntityFrameworkCore;
 using SalesMvc.Models;
 using SalesMvc.Data;
 using SalesMvc.Services;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
 
 namespace SalesMvc
 {
@@ -43,11 +45,23 @@ namespace SalesMvc
                     builder => builder.MigrationsAssembly("SalesMvc")));
             services.AddScoped<SeedingService>();
             services.AddScoped<SellerService>();
+            services.AddScoped<DepartmentService>();
+            services.AddScoped<SalesRecordService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, SeedingService seed)
         {
+
+            var enUS = new CultureInfo("en-US");
+            var localizationOptions = new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture(enUS),
+                SupportedCultures = new List<CultureInfo> { enUS },
+                SupportedUICultures = new List<CultureInfo> { enUS }
+            };
+
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -59,7 +73,7 @@ namespace SalesMvc
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.UseRequestLocalization(localizationOptions);
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();

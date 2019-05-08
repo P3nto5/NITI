@@ -13034,11 +13034,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\SalesMvc\\SalesMvc\\SalesMvc.csproj",
+      "projectUniqueName": "F:\\SalesMvc\\NITI\\SalesMvc\\SalesMvc.csproj",
       "projectName": "SalesMvc",
-      "projectPath": "F:\\SalesMvc\\SalesMvc\\SalesMvc.csproj",
+      "projectPath": "F:\\SalesMvc\\NITI\\SalesMvc\\SalesMvc.csproj",
       "packagesPath": "C:\\Users\\SSP\\.nuget\\packages\\",
-      "outputPath": "F:\\SalesMvc\\SalesMvc\\obj\\",
+      "outputPath": "F:\\SalesMvc\\NITI\\SalesMvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

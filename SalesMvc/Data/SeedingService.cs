@@ -29,12 +29,12 @@ namespace SalesMvc.Data
             Department d4 = new Department(4, "Food");
             Department d5 = new Department(5, "Books");
 
-            Seller s1 = new Seller(1, "Bob", "bob@gmail.com", 1000.0 ,new DateTime(1997, 4, 21), d1);
-            Seller s2 = new Seller(2, "Maria", "maria@gmail.com", 1000.0 ,new DateTime(1996, 6, 19), d2);
-            Seller s3 = new Seller(3, "Joao", "joao@gmail.com", 1000.0 ,new DateTime(1998, 9, 27), d3);
-            Seller s4 = new Seller(4, "Samuel", "samuel@gmail.com", 1000.0 ,new DateTime(1999, 10, 2), d4);
-            Seller s5 = new Seller(5, "Donald", "donald@gmail.com", 1000.0 ,new DateTime(1995, 1, 24), d5);
-            Seller s6 = new Seller(6, "Ruan", "ruan@gmail.com", 1000.0 ,new DateTime(1997, 10, 26), d2);
+            Seller s1 = new Seller(1, "Bob", "bob@gmail.com", 2500.0 ,new DateTime(1997, 4, 21), d1);
+            Seller s2 = new Seller(2, "Maria", "maria@gmail.com", 2000.0 ,new DateTime(1996, 6, 19), d2);
+            Seller s3 = new Seller(3, "Joao", "joao@gmail.com", 3000.0 ,new DateTime(1998, 9, 27), d3);
+            Seller s4 = new Seller(4, "Samuel", "samuel@gmail.com", 4000.0 ,new DateTime(1999, 10, 2), d4);
+            Seller s5 = new Seller(5, "Donald", "donald@gmail.com", 5000.0 ,new DateTime(1995, 1, 24), d5);
+            Seller s6 = new Seller(6, "Ruan", "ruan@gmail.com", 6000.0 ,new DateTime(1997, 10, 26), d2);
 
             SalesRecord sr1 = new SalesRecord(1, new DateTime(2019, 09, 25), 11000.0, SalesStatus.Billed, s1);
             SalesRecord sr2 = new SalesRecord(2, new DateTime(2018, 09, 25), 21000.0, SalesStatus.Canceled, s3);
