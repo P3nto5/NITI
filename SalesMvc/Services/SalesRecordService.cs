@@ -31,7 +31,7 @@ namespace SalesMvc.Services
                 .OrderByDescending(x => x.Date)
                 .ToListAsync();
         }
-        public async Task<List<IGrouping<Department, SalesRecord>>> FindByDateGroupingAsync(DateTime? minDate, DateTime? maxDate)
+        public async Task<List< IGrouping<Department, SalesRecord> >> FindByDateGroupingAsync(DateTime? minDate, DateTime? maxDate)
         {
             var result = from obj in _context.SalesRecords select obj;
             if (minDate.HasValue)

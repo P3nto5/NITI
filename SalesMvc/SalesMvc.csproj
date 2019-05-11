@@ -8,6 +8,14 @@
   <ItemGroup>
     <Compile Remove="Migrations\20190503161351_Inital.cs" />
     <Compile Remove="Migrations\20190503161351_Inital.Designer.cs" />
+    <Compile Remove="Migrations\20190503180247_OtherEntities.cs" />
+    <Compile Remove="Migrations\20190503180247_OtherEntities.Designer.cs" />
+    <Compile Remove="Migrations\20190511195725_Prog.cs" />
+    <Compile Remove="Migrations\20190511195725_Prog.Designer.cs" />
+    <Compile Remove="Migrations\20190511200001_Proge.cs" />
+    <Compile Remove="Migrations\20190511200001_Proge.Designer.cs" />
+    <Compile Remove="Migrations\20190511200127_ProgDB.cs" />
+    <Compile Remove="Migrations\20190511200127_ProgDB.Designer.cs" />
   </ItemGroup>
 
 

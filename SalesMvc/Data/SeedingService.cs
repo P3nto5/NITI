@@ -34,17 +34,22 @@ namespace SalesMvc.Data
             Seller s3 = new Seller(3, "Joao", "joao@gmail.com", 3000.0 ,new DateTime(1998, 9, 27), d3);
             Seller s4 = new Seller(4, "Samuel", "samuel@gmail.com", 4000.0 ,new DateTime(1999, 10, 2), d4);
             Seller s5 = new Seller(5, "Donald", "donald@gmail.com", 5000.0 ,new DateTime(1995, 1, 24), d5);
-            Seller s6 = new Seller(6, "Ruan", "ruan@gmail.com", 6000.0 ,new DateTime(1997, 10, 26), d2);
+            Seller s6 = new Seller(6, "Ruan", "ruan@gmail.com", 6000.0 ,new DateTime(1997, 10, 26), d5);
 
             SalesRecord sr1 = new SalesRecord(1, new DateTime(2019, 09, 25), 11000.0, SalesStatus.Billed, s1);
-            SalesRecord sr2 = new SalesRecord(2, new DateTime(2018, 09, 25), 21000.0, SalesStatus.Canceled, s3);
-            SalesRecord sr3 = new SalesRecord(3, new DateTime(2017, 09, 25), 31000.0, SalesStatus.Pending, s6);
-            SalesRecord sr4 = new SalesRecord(4, new DateTime(2016, 09, 25), 1000.0, SalesStatus.Pending, s2);
+            SalesRecord sr2 = new SalesRecord(2, new DateTime(2018, 09, 25), 21000.0, SalesStatus.Canceled, s2);
+            SalesRecord sr3 = new SalesRecord(3, new DateTime(2017, 09, 25), 31000.0, SalesStatus.Pending, s3);
+            SalesRecord sr4 = new SalesRecord(4, new DateTime(2016, 09, 25), 1000.0, SalesStatus.Pending, s5);
             SalesRecord sr5 = new SalesRecord(5, new DateTime(2015, 09, 25), 500.0, SalesStatus.Canceled, s4);
+            SalesRecord sr6 = new SalesRecord(6, new DateTime(2015, 09, 25), 11000.0, SalesStatus.Billed, s1);
+            SalesRecord sr7 = new SalesRecord(7, new DateTime(2018, 09, 25), 21000.0, SalesStatus.Canceled, s3);
+            SalesRecord sr8 = new SalesRecord(8, new DateTime(2019, 09, 25), 31000.0, SalesStatus.Pending, s6);
+            SalesRecord sr9 = new SalesRecord(9, new DateTime(2014, 09, 25), 1000.0, SalesStatus.Pending, s2);
+            SalesRecord sr10 = new SalesRecord(10, new DateTime(2012, 09, 25), 500.0, SalesStatus.Canceled, s4);
 
             _context.Department.AddRange(d1, d2, d3, d4, d5);
             _context.Sellers.AddRange(s1, s2, s3, s4, s5, s6);
-            _context.SalesRecords.AddRange(sr1, sr2, sr3, sr4, sr5);
+            _context.SalesRecords.AddRange(sr1, sr2, sr3, sr4, sr5, sr6, sr7, sr8, sr9, sr10);
 
             _context.SaveChanges();
         }
