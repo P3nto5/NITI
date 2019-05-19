@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\SalesMvc\\NITI\\SalesMvc\\SalesMvc.csproj": {}
+    "C:\\Users\\Black mask\\Desktop\\NITI\\SalesMvc\\SalesMvc.csproj": {}
   },
   "projects": {
-    "F:\\SalesMvc\\NITI\\SalesMvc\\SalesMvc.csproj": {
+    "C:\\Users\\Black mask\\Desktop\\NITI\\SalesMvc\\SalesMvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\SalesMvc\\NITI\\SalesMvc\\SalesMvc.csproj",
+        "projectUniqueName": "C:\\Users\\Black mask\\Desktop\\NITI\\SalesMvc\\SalesMvc.csproj",
         "projectName": "SalesMvc",
-        "projectPath": "F:\\SalesMvc\\NITI\\SalesMvc\\SalesMvc.csproj",
-        "packagesPath": "C:\\Users\\SSP\\.nuget\\packages\\",
-        "outputPath": "F:\\SalesMvc\\NITI\\SalesMvc\\obj\\",
+        "projectPath": "C:\\Users\\Black mask\\Desktop\\NITI\\SalesMvc\\SalesMvc.csproj",
+        "packagesPath": "C:\\Users\\Black mask\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Black mask\\Desktop\\NITI\\SalesMvc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\SSP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Black mask\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
