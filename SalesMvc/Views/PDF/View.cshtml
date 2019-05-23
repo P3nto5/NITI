@@ -1,0 +1,20 @@
+﻿@model IList<int>
+
+    <h2>Enviar Imagens</h2>
+
+    <hr>
+
+    <div class="container" id="box">
+        <form action="/Imagens/UploadPDF" enctype="multipart/form-data" method="post" class="form-group">
+            <input type="file" name="arquivos" class="form-control" />
+            <br />
+            <button class="success form-control" type="submit">Enviar PDF</button>
+        </form>
+    </div>
+    <br />
+    @foreach (var item in Model)
+    {
+        <img id="img" class="custom-file" src="/Imagens/VerImagem/@item" />
+    }
+
+

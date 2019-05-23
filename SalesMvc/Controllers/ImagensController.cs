@@ -27,7 +27,7 @@ namespace SalesMvc.Controllers
         public IActionResult UploadImagem(IList<IFormFile> arquivos)
         {
             IFormFile imagemEnviada = arquivos.FirstOrDefault();
-            if (imagemEnviada != null || imagemEnviada.ContentType.ToLower().StartsWith("image/"))
+            if (imagemEnviada != null || imagemEnviada.ContentType.ToLower().StartsWith("File/"))
             {
                 MemoryStream ms = new MemoryStream();
                 imagemEnviada.OpenReadStream().CopyTo(ms);
@@ -52,5 +52,6 @@ namespace SalesMvc.Controllers
             MemoryStream ms = new MemoryStream(imagem.Dados);
             return new FileStreamResult(ms, imagem.ContentType);
         }
+
     }
 }

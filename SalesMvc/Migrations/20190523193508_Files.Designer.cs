@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SalesMvc.Models;
 
 namespace SalesMvc.Migrations
 {
     [DbContext(typeof(SalesMvcContext))]
-    partial class SalesMvcContextModelSnapshot : ModelSnapshot
+    [Migration("20190523193508_Files")]
+    partial class Files
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -43,22 +45,6 @@ namespace SalesMvc.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Imagens");
-                });
-
-            modelBuilder.Entity("SalesMvc.Models.PDF", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("ContentType");
-
-                    b.Property<byte[]>("Dados");
-
-                    b.Property<string>("Nome");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("PDFs");
                 });
 
             modelBuilder.Entity("SalesMvc.Models.SalesRecord", b =>

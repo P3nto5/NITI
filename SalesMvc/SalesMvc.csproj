@@ -20,6 +20,8 @@
     <Compile Remove="Migrations\20190511200622_ProgDB.Designer.cs" />
     <Compile Remove="Migrations\20190519133253_ImagemDB.cs" />
     <Compile Remove="Migrations\20190519133253_ImagemDB.Designer.cs" />
+    <Compile Remove="Migrations\20190523150848_imageDB.cs" />
+    <Compile Remove="Migrations\20190523150848_imageDB.Designer.cs" />
   </ItemGroup>
 
 

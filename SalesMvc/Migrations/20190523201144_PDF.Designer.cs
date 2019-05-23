@@ -9,8 +9,8 @@ using SalesMvc.Models;
 namespace SalesMvc.Migrations
 {
     [DbContext(typeof(SalesMvcContext))]
-    [Migration("20190523150848_imageDB")]
-    partial class imageDB
+    [Migration("20190523201144_PDF")]
+    partial class PDF
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -45,6 +45,22 @@ namespace SalesMvc.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Imagens");
+                });
+
+            modelBuilder.Entity("SalesMvc.Models.PDF", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("ContentType");
+
+                    b.Property<byte[]>("Dados");
+
+                    b.Property<string>("Nome");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PDFs");
                 });
 
             modelBuilder.Entity("SalesMvc.Models.SalesRecord", b =>

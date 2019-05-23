@@ -17,5 +17,6 @@ namespace SalesMvc.Models
         public DbSet<SalesRecord> SalesRecords { get; set; }
         public DbSet<Seller> Sellers { get; set; }
         public DbSet<Imagem> Imagens { get; set; }
+        public DbSet<PDF> PDFs { get; set; }
     }
 }

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SalesMvc.Migrations
 {
-    public partial class imageDB : Migration
+    public partial class Files : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
