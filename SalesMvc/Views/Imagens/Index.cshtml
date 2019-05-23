@@ -4,13 +4,15 @@
 
 <hr>
 
-<form action="/Imagens/UploadImagem" enctype="multipart/form-data" method="post" class="form-group">
+<div class="container" id="box">
+ <form action="/Imagens/UploadImagem" enctype="multipart/form-data" method="post" class="form-group">
     <input type="file" name="arquivos" class="form-control" />
     <br />
-    <button>Enviar Imagem</button>
-</form>
+    <button class="success form-control" type="submit">Enviar Imagem</button>
+ </form>
+    </div>
 <br />
 @foreach (var item in Model)
 {
-    <img src="/Imagens/VerImagem/@item" />
+    <img id="img" class="img-responsive rounded"  src="/Imagens/VerImagem/@item" />
 }

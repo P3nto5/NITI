@@ -9,8 +9,8 @@ using SalesMvc.Models;
 namespace SalesMvc.Migrations
 {
     [DbContext(typeof(SalesMvcContext))]
-    [Migration("20190511200622_ProgDB")]
-    partial class ProgDB
+    [Migration("20190523150848_imageDB")]
+    partial class imageDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -29,6 +29,22 @@ namespace SalesMvc.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Department");
+                });
+
+            modelBuilder.Entity("SalesMvc.Models.Imagem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("ContentType");
+
+                    b.Property<byte[]>("Dados");
+
+                    b.Property<string>("Nome");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Imagens");
                 });
 
             modelBuilder.Entity("SalesMvc.Models.SalesRecord", b =>

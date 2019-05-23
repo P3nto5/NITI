@@ -16,6 +16,10 @@
     <Compile Remove="Migrations\20190511200001_Proge.Designer.cs" />
     <Compile Remove="Migrations\20190511200127_ProgDB.cs" />
     <Compile Remove="Migrations\20190511200127_ProgDB.Designer.cs" />
+    <Compile Remove="Migrations\20190511200622_ProgDB.cs" />
+    <Compile Remove="Migrations\20190511200622_ProgDB.Designer.cs" />
+    <Compile Remove="Migrations\20190519133253_ImagemDB.cs" />
+    <Compile Remove="Migrations\20190519133253_ImagemDB.Designer.cs" />
   </ItemGroup>
 
 
